@@ -1,0 +1,1195 @@
+/*===============================
+        GOOGLE FONT
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*===============================
+            RESET
+================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0B0B0B;
+    color:#FFFFFF;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:100px 10%;
+}
+
+/*===============================
+        SCROLLBAR
+================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00BFFF;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00E5FF;
+}
+
+/*===============================
+            HEADER
+================================*/
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#111;
+    border-bottom:1px solid #1f1f1f;
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+/* ===============================
+        LOGO + NOM
+================================ */
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.tech-logo{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.tech-logo svg{
+
+    width:100%;
+
+    filter:
+    drop-shadow(0 0 8px #00BFFF)
+    drop-shadow(0 0 20px #00BFFF);
+
+}
+
+
+/* ===============================
+        NOM DE LA MARQUE
+================================ */
+
+
+
+.brand-name span{
+
+    font-family:'Gabriola', sans-serif;
+
+    color:#00BFFF;
+
+    margin-left:5px;
+
+    text-shadow:
+    0 0 8px #00BFFF,
+    0 0 20px #00BFFF,
+    0 0 40px #00BFFF;
+
+}
+
+
+/* petit effet développeur */
+
+.brand-name::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:100%;
+
+    height:2px;
+
+    background:#00BFFF;
+
+    box-shadow:
+    0 0 10px #00BFFF;
+
+}
+
+/*===============================
+            MENU
+================================*/
+
+.menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+}
+
+.menu li{
+
+    list-style:none;
+}
+
+.menu a{
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.4s;
+}
+
+#menu-toggle{
+
+    display:none;
+
+}
+
+
+.menu-btn{
+
+    display:none;
+
+    color:#00BFFF;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+.menu a:hover{
+
+    color:#00BFFF;
+}
+
+/*===============================
+        TITRES
+================================*/
+
+.titre{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:60px;
+
+    color:#00BFFF;
+
+    text-shadow:
+
+    0 0 10px #00BFFF;
+}
+
+/*==================================
+            HERO
+===================================*/
+
+.hero{
+    min-height:100vh;
+    padding-top:120px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    color:#00BFFF;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.hero-text h1{
+    font-size:65px;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text h2{
+    font-size:32px;
+    color:#00E5FF;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    color:#CFCFCF;
+    font-size:18px;
+    line-height:32px;
+    text-align:justify;
+    margin-bottom:40px;
+}
+
+.hero-btn{
+    display:flex;
+    gap:20px;
+}
+
+/*==================================
+            BOUTONS
+===================================*/
+
+.btn,
+.btn2{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.btn{
+
+    background:#00BFFF;
+
+    color:#000;
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 15px #00BFFF,
+    0 0 35px #00BFFF;
+}
+
+.btn2{
+
+    border:2px solid #00BFFF;
+
+    color:#00BFFF;
+}
+
+.btn2:hover{
+
+    background:#00BFFF;
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 15px #00BFFF,
+    0 0 35px #00BFFF;
+}
+
+/*==================================
+        PHOTO DE PROFIL
+===================================*/
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.hero-image img{
+
+    width:370px;
+
+    height:370px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #00BFFF;
+
+    box-shadow:
+    0 0 20px #00BFFF,
+    0 0 50px #00BFFF,
+    0 0 80px rgba(0,191,255,.4);
+
+    transition:.5s;
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 30px #00BFFF,
+    0 0 60px #00BFFF,
+    0 0 100px rgba(0,191,255,.8);
+}
+/*==================================
+            A PROPOS
+===================================*/
+
+.apropos{
+
+    min-height:60vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* Carte de présentation */
+
+.card{
+
+    background:#161616;
+
+    border:1px solid #222;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:
+    0 0 15px rgba(0,191,255,0.1);
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00BFFF;
+
+    box-shadow:
+
+    0 0 20px rgba(0,191,255,0.4),
+
+    0 0 40px rgba(0,191,255,0.2);
+
+}
+
+
+.card p{
+
+    color:#CFCFCF;
+
+    font-size:18px;
+
+    line-height:35px;
+
+}
+
+/*==================================
+          COMPETENCES
+===================================*/
+
+.competences{
+
+    min-height:70vh;
+
+}
+
+
+/* Conteneur des compétences */
+
+.skills{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+/* Carte compétence */
+
+.skill{
+
+    background:#161616;
+
+    height:180px;
+
+    border-radius:20px;
+
+    border:1px solid #222;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+
+/* Icônes */
+
+.skill i{
+
+    font-size:45px;
+
+    color:#00BFFF;
+
+    text-shadow:
+
+    0 0 10px #00BFFF;
+
+}
+
+
+/* Texte */
+
+.skill h3{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+
+/* Effet au survol */
+
+.skill:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00BFFF;
+
+    box-shadow:
+
+    0 0 20px rgba(0,191,255,0.5),
+
+    0 0 40px rgba(0,191,255,0.2);
+
+}
+
+
+.skill:hover i{
+
+    color:#00E5FF;
+
+}
+
+/*==================================
+            FORMATION
+===================================*/
+
+.formation{
+
+    min-height:50vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* Carte formation */
+
+.formation-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:#161616;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid #222;
+
+    transition:.4s;
+
+}
+
+
+/* Icône diplôme */
+
+.formation-card i{
+
+    font-size:50px;
+
+    color:#00BFFF;
+
+    margin-bottom:20px;
+
+    text-shadow:
+
+    0 0 15px #00BFFF;
+
+}
+
+
+/* Titre */
+
+.formation-card h3{
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* Description */
+
+.formation-card p{
+
+    color:#CFCFCF;
+
+    font-size:17px;
+
+    line-height:30px;
+
+}
+
+
+/* Effet hover */
+
+.formation-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00BFFF;
+
+    box-shadow:
+
+    0 0 25px rgba(0,191,255,0.4);
+
+}
+
+/*==================================
+            CONTACT
+===================================*/
+
+.contact{
+
+    min-height:50vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* Conteneur des liens */
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* Liens */
+
+.contact-container a{
+
+    width:220px;
+
+    height:120px;
+
+    background:#161616;
+
+    border:1px solid #222;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+
+/* Icônes */
+
+.contact-container i{
+
+    font-size:40px;
+
+    color:#00BFFF;
+
+    text-shadow:
+
+    0 0 10px #00BFFF;
+
+}
+
+
+/* Effet hover */
+
+.contact-container a:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00BFFF;
+
+    box-shadow:
+
+    0 0 25px rgba(0,191,255,0.5);
+
+}
+
+
+.contact-container a:hover i{
+
+    color:#00E5FF;
+
+}
+
+/*==================================
+            FOOTER
+===================================*/
+
+footer{
+
+    background:#111;
+
+    border-top:1px solid #222;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+footer p{
+
+    color:#999;
+
+    font-size:15px;
+
+}
+
+
+/*==================================
+        RESPONSIVE TABLETTE
+===================================*/
+
+@media(max-width:900px){
+
+
+    .navbar{
+
+        width:90%;
+
+    }
+
+
+    .menu{
+
+        gap:20px;
+
+    }
+
+
+    .menu a{
+
+        font-size:15px;
+
+    }
+
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        padding-top:150px;
+
+    }
+
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:45px;
+
+    }
+
+
+    .hero-text h2{
+
+        font-size:25px;
+
+    }
+
+
+    .hero-text p{
+
+        text-align:center;
+
+    }
+
+
+    .hero-btn{
+
+        justify-content:center;
+
+    }
+
+
+    .skills{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*==================================
+        RESPONSIVE MOBILE
+===================================*/
+
+@media(max-width:600px){
+
+
+    section{
+
+        padding:80px 5%;
+
+    }
+
+
+    .navbar{
+
+        height:70px;
+
+    }
+
+
+    .logo{
+
+        font-size:24px;
+
+    }
+
+
+   .menu-btn{
+
+        display:block;
+
+    }
+
+
+    .menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+
+        right:5%;
+
+        flex-direction:column;
+
+        gap:20px;
+
+        background:#161616;
+
+        padding:25px;
+
+        border-radius:15px;
+
+        border:1px solid #00BFFF;
+
+    }
+
+
+    #menu-toggle:checked ~ .menu{
+
+        display:flex;
+
+    }
+}
+
+
+    .hero-image img{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:35px;
+
+    }
+
+
+    .hero-text h2{
+
+        font-size:22px;
+
+    }
+
+
+    .hero-text p{
+
+        font-size:16px;
+
+        line-height:28px;
+
+    }
+
+
+    .hero-btn{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .btn,
+    .btn2{
+
+        width:200px;
+
+        text-align:center;
+
+    }
+
+
+    .titre{
+
+        font-size:32px;
+
+    }
+
+
+    .skills{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .card{
+
+        padding:25px;
+
+    }
+
+
+    .formation-card{
+
+        padding:25px;
+
+    }
+
+
+    .contact-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .contact-container a{
+
+        width:90%;
+
+    }
+
+
+
+/*==================================
+            PROJETS
+===================================*/
+
+.projets{
+
+    min-height:60vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* Carte du projet */
+
+.project-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    background:#161616;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid #222;
+
+    transition:.4s;
+
+}
+
+
+/* Icône */
+
+.project-card i{
+
+    font-size:50px;
+
+    color:#00BFFF;
+
+    margin-bottom:20px;
+
+    text-shadow:
+
+    0 0 15px #00BFFF;
+
+}
+
+
+/* Titre */
+
+.project-card h3{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* Description */
+
+.project-card p{
+
+    color:#CFCFCF;
+
+    font-size:17px;
+
+    line-height:32px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* Technologies */
+
+.technologies{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+.technologies span{
+
+    padding:8px 20px;
+
+    border-radius:20px;
+
+    border:1px solid #00BFFF;
+
+    color:#00BFFF;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+
+.technologies span:hover{
+
+    background:#00BFFF;
+
+    color:#000;
+
+    box-shadow:
+
+    0 0 15px #00BFFF;
+
+}
+
+
+/* Statut */
+
+.project-card h4{
+
+    color:#00E5FF;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+
+/* Effet carte */
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00BFFF;
+
+    box-shadow:
+
+    0 0 25px rgba(0,191,255,0.4),
+
+    0 0 50px rgba(0,191,255,0.2);
+
+}
+
+
+
+
+
+
+

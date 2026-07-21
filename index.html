@@ -1,0 +1,329 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mouhamed Mounir Diallo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            
+        <div class="brand">
+
+            <div class="tech-logo">
+
+                <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+
+                    <path d="M10 90 V20 L45 70 L60 40 L75 70 L110 20 V90"
+                        fill="none"
+                        stroke="#00BFFF"
+                        stroke-width="8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+
+                    <circle cx="10" cy="90" r="5" fill="#00E5FF"/>
+                    <circle cx="110" cy="90" r="5" fill="#00E5FF"/>
+
+                </svg>
+
+            </div>
+
+
+            <h2 class="brand-name">
+            <span>MounirLabs</span>
+            </h2>
+
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+
+        <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="accueil">
+
+        <div class="hero-text">
+
+            <h3>👋 Bonjour, je suis</h3>
+
+            <h1>Mouhamed Mounir Diallo</h1>
+
+            <h2>Étudiant en Programmation & Développement Web</h2>
+
+            <p>
+                Passionné par le développement web, la programmation
+                et les nouvelles technologies, je développe mes
+                compétences afin de devenir un futur ingénieur logiciel.
+            </p>
+
+            <div class="hero-btn">
+
+                <a href="#apropos" class="btn">Découvrir</a>
+
+                <a href="#contact" class="btn2">Me contacter</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/photo.jpeg" alt="Photo">
+
+        </div>
+
+    </section>
+
+    <!-- ================= A PROPOS ================= -->
+
+    <section class="apropos" id="apropos">
+
+        <h2 class="titre">À propos de moi</h2>
+
+        <div class="card">
+
+            <p>
+
+                Je suis étudiant en développement informatique,
+                passionné par la création de sites web modernes,
+                d'applications et par la résolution de problèmes.
+
+                J'aime apprendre de nouvelles technologies et améliorer
+                constamment mes compétences afin de réaliser des projets
+                professionnels.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COMPETENCES ================= -->
+
+    <section class="competences" id="competences">
+
+        <h2 class="titre">Mes compétences</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-code"></i>
+                <h3>C</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-server"></i>
+                <h3>PL/SQL</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJETS ================= -->
+
+    <section class="projets" id="projets">
+
+        <h2 class="titre">Mes projets</h2>
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            <h3>Système de gestion d'un fast-food</h3>
+
+            <p>
+            Développement d'une application de gestion permettant
+            de gérer les produits, les catégories, les commandes,
+            les utilisateurs, les stocks et les différentes opérations
+            liées à un fast-food.
+            </p>
+
+        <div class="technologies">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <h4>Projet en cours de développement</h4>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-hotel"></i>
+
+            <h3>Application de gestion d'un hôtel</h3>
+
+            <p>
+                Conception et développement d'une application de gestion
+                d'hôtel permettant de gérer les chambres, les réservations,
+                les clients et les différentes opérations liées à l'activité
+                hôtelière.
+            </p>
+
+            <div class="technologies">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+            </div>
+
+        <h4>Projet académique en cours de préparation</h4>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FORMATION ================= -->
+
+    <section class="formation" id="formation">
+
+        <h2 class="titre">Formation</h2>
+
+        <div class="formation-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>Étudiant en Programmation & Développement WEB</h3>
+
+            <p>
+                Formation orientée développement web,
+                programmation, bases de données
+                et génie logiciel.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="titre">Contact</h2>
+
+        <div class="contact-container">
+
+            <a href="https://github.com/Bpjrtheking" target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+
+                GitHub
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/mouhamed-mounir-diallo-a3a031424/" target="_blank">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+            <a href="mailto:tonemail@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Email
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Mouhamed Mounir Diallo | Tous droits réservés.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
