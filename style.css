@@ -306,9 +306,12 @@ header{
 
     display:flex;
 
+    flex-direction:row;
+
     align-items:center;
 
     gap:25px;
+    
 
 }
 
@@ -319,9 +322,15 @@ header{
 .btn,
 .btn2{
 
-    display:inline-block;
+    display:inline-flex;
 
-    padding:16px 40px;
+    align-items:center;
+
+    justify-content:center;
+
+    width:180px;
+
+    height:55px;
 
     border-radius:40px;
 
@@ -950,12 +959,11 @@ footer p{
     }
 
 
-    #menu-toggle:checked ~ .menu{
+        #menu-toggle:checked ~ .menu{
 
         display:flex;
 
     }
-}
 
 
     .hero-image img{
@@ -1007,6 +1015,8 @@ footer p{
         text-align:center;
 
     }
+
+}
 
 
     .titre{
