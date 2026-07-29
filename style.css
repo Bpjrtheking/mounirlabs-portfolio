@@ -65,7 +65,8 @@ header{
 
 .navbar{
 
-    width:90%;
+    width:80%;
+
     margin:auto;
 
     height:80px;
@@ -173,7 +174,7 @@ header{
 
     list-style:none;
 
-    gap:40px;
+    gap:30px;
 }
 
 .menu li{
